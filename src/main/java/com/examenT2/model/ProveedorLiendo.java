@@ -18,7 +18,7 @@ import lombok.Setter;
 @Table(name = "tbl_proveedor")
 @Getter
 @Setter
-public class Proveedor {
+public class ProveedorLiendo {
 	@Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id_proveedor")
@@ -41,5 +41,5 @@ public class Proveedor {
 
     @ManyToOne
     @JoinColumn(name = "id_rubro")
-    private Rubro rubro;
+    private RubroLiendo rubro;
 }

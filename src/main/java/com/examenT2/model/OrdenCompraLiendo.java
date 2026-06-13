@@ -16,7 +16,7 @@ import lombok.Setter;
 @Entity
 @Table(name = "tbl_orden_compra")
 @Getter @Setter
-public class OrdenCompra {
+public class OrdenCompraLiendo {
 		@Id
 	    @GeneratedValue(strategy = GenerationType.IDENTITY)
 	    @Column(name = "nro_orden")
@@ -36,5 +36,5 @@ public class OrdenCompra {
 
 	    @ManyToOne
 	    @JoinColumn(name = "id_proveedor")
-	    private Proveedor proveedor;
+	    private ProveedorLiendo proveedor;
 }

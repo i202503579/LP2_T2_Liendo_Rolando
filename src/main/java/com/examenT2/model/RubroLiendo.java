@@ -13,7 +13,7 @@ import lombok.Setter;
 @Table(name = "tbl_rubro")
 @Getter
 @Setter
-public class Rubro {
+public class RubroLiendo {
 	
 	@Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
